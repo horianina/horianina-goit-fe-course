@@ -6,23 +6,29 @@ body {
 }
 nav {
     display: block;
+    
 }
-.site-navigation {
-    font-size: 14px;
+.site-navigation {  
+    /*font-size: 14px;
     list-style: none;
     text-align: center;
     padding: 50px;
     width: 100%;
-    margin-left: -70px;
-    
+    margin-left: -70px;*/
+    padding-top: 5px;
+    bottom: 10px ;
    }
 .site-navigation li { 
-   display: inline; /* Отображать как строчный элемент */
+   display: inline-block; /* Отображать как строчный элемент */
    padding: 20px; /* Поля вокруг текста */
-   margin: 30px;  
+   margin-right: 25px;
+   
    }
-     
+   .link {
+       margin-right: 0;
+   }
 .site-navigation a {
+   display: block;
     color: #626262;
     font-weight: 400;
     text-transform: uppercase;
@@ -37,7 +43,7 @@ div {
 }
 .container {
     width: 100%;
-    max-width: 1080px;
+    max-width: 900px;
     padding: 0 15px;   
     margin: 0 auto;  
 }    
@@ -49,13 +55,17 @@ div {
     display: inline-block;
     width: 40%;
     margin: 2em; 
-    text-align: justify;   
+    text-align: justify;  
+    margin-right: 20px;
+    bottom: 0; 
 }
+.row-list-item:not(:nth-child(2n)) {
+    margin-right: 0; 
+   }
 .row-list-image {
     list-style: none;
     width: 100%;
-    margin-top: 30px;
-}
+    
 .row-list-name {
     font-size: 14px;
     line-height: 17px;
@@ -72,6 +82,8 @@ div {
     margin-inline-start: 0px;
     margin-inline-end: 0px;
     font-weight: bold;  
+    margin: 0;
+    margin-bottom: 20px;
 }
 .row-list-post {
     
@@ -80,9 +92,11 @@ div {
     margin-block-end: 1em;
     margin-inline-start: 0px;
     margin-inline-end: 0px;
+    margin: 0;
+    margin-bottom: 0;
 }
-footer {
-    display: block;
+.row-list-post:not(:nth-last-child(-n+6)) {
+    margin-bottom: 0;
 }
 .page-footer button {
     font-size: 20px;
@@ -92,7 +106,6 @@ footer {
     margin-left: 450px;
     padding: 10px;
     margin-top: 30px;
-   
 }
 
 .visually-hidden:not(:focus):not(:active),
@@ -111,4 +124,7 @@ input[type="radio"].visually-hidden {
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
+}
+footer {
+    display: block;
 }
