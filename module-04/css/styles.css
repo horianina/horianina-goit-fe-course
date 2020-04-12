@@ -1,5 +1,5 @@
 body {
-    width: 1140px;
+    
     margin: auto;
 }
 .page-header {
@@ -13,6 +13,11 @@ body {
  margin: 0;
  
 }
+.container {
+    width: 1140px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
 .logo {
     float: left;
     list-style: none;
@@ -24,7 +29,7 @@ body {
     color: #555252;
     font-size: 30px;
     line-height: 32px;
-    margin: 15px;
+    
 }
 .logo::first-letter {
 color: #1abc9c;
@@ -32,25 +37,25 @@ font-family: "Roboto", "Arial", serif;
 }
 .site-navigation li{
     float: left;
-    margin: 15px;
-    font-family: "Roboto", "Arial", serif;
+    margin-right: 15px;
+    
     
 }
+.site-navigation li:last-child {
+    margin-right: 0;
+ }
 .site-navigation a {
+    display: block;
     color: #0f0101;
     text-transform: uppercase;
     text-decoration: none;
     line-height: 11px;
-    
+    font-family: "Roboto", "Arial", serif;
 }
 .site-navigation a:hover {
     color: #1abc9c;
 }
-.row {
-    
-    width: 1140px;
-    height: 930px;
-}
+
 .row-list-heading {
     font-family: "Roboto", "Arial", serif;
     font-size: 48px;
@@ -59,7 +64,8 @@ font-family: "Roboto", "Arial", serif;
     color: #515151;
     text-transform: uppercase;
     text-align: center;
-    padding: 5px 0; 
+    margin: 0;
+    margin-bottom: 30px;
 }
 
 .row-list {
@@ -70,16 +76,16 @@ font-family: "Roboto", "Arial", serif;
     margin: 0;
     
 }
-.row-list-name:hover {
-    background-color: #1abc9c;
 
-}
 .row-list-price:hover {
-    background-color: #7fd9c7;
+    background-color: #1abc9c;
 }
 .row-list-rectangle {
     width: 255px;
     float: left;  
+}
+.row-list-rectangle a {
+    text-decoration: none;
 }
 .row-list-rectangle:not(:nth-child(4n)) {
     margin-right: 40px;
@@ -87,7 +93,7 @@ font-family: "Roboto", "Arial", serif;
 .row-list-rectangle:not(:nth-last-child(-n+4)) {
     margin-bottom: 32px;
 }
-h2::after {
+.page-footer-name::after {
     display: block;
     width: 164px;
     height: 7px;
@@ -115,6 +121,11 @@ h3::after {
   
 }
 .row-list-name {
+
+    background-color: #323232;
+    
+}
+.row-list-names {
     float: left;
     font-family: "Roboto", "Arial", serif;
     font-size: 18px;
@@ -127,6 +138,9 @@ h3::after {
     padding: 0;
     text-align: center;
 }
+.row-list-names:hover {
+    background-color: #1abc9c;
+}
 .row-list-price {
     float: right;
     font-family: "Roboto", "Arial", serif;
@@ -134,8 +148,9 @@ h3::after {
     line-height: 32px;
     width: 53px;
     height: 40px;
+   
     background-color: #8c8c8c;
-    color: #ffffff;
+    opacity: 0.7;
     margin: 0;
     padding: 0;
     text-align: center;
@@ -151,9 +166,9 @@ h3::after {
     margin: 0;
 }
 .page-footer-row {
-    width: 347px ;
+    width: 350px ;
     float: left;
-    margin: 25px 0;
+    margin-right: 10px;
 }
 .page-footer-row:not(:nth-child(3n)){
     margin-right: 39px;
@@ -178,20 +193,25 @@ h3::after {
     font-weight: 600;
     line-height: 26px;
     color: #6c6969;
+    margin: 0;
+    margin-bottom: 20px;
 }
 .page-footer-post {
     font-family: "OpenSans", "Arial", sans-serif;
     font-size: 18px;
     line-height: 26px;
     color: #605e5e;
+    margin: 0;
+    margin-bottom: 20px;
 }
-.page-footer-click {
+.page-footer-link {
     font-family: "OpenSans", "Arial", sans-serif;
     background-color: #4ec6ab;
+    text-decoration: none;
     color: #cfede5;
     width: 160px;
     height: 50px;
     font-size: 16px;
     line-height: 26px;
-    
+    padding: 15px 25px;   
 }
