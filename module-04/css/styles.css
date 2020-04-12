@@ -102,13 +102,13 @@ font-family: "Roboto", "Arial", serif;
     margin: 20px auto;
    
 }
-h3::after {
+.row-list-heading::after {
     display: block;
-    width: 136px;
-    height: 4px;
+    width: 164px;
+    height: 7px;
     background-color: #4ec6ab ;
     content: '';
-    margin: 20px 0;
+    margin: 20px auto;
     
 }
 .clearfix::after {
