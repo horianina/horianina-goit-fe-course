@@ -55,14 +55,14 @@ font-family: "Roboto", "Arial", serif;
     text-transform: uppercase;
     text-decoration: none;
     line-height: 11px;
-    font-family: "Roboto", "Arial", serif;
+    font-family: "Roboto", "Arial", sans-serif;
 }
 .site-navigation a:hover {
     color: #1abc9c;
 }
 
 .row-list-heading {
-    font-family: "Roboto", "Arial", serif;
+    font-family: "Roboto", "Arial", sans-serif;
     font-size: 48px;
     font-weight: 900;
     line-height: 32px;
@@ -81,17 +81,21 @@ font-family: "Roboto", "Arial", serif;
     margin: 0;  
 }
 
-.row-list-price:hover {
+/*.row-list-price:hover {
     background-color: #1abc9c;
 }
 
-.row-list-name:hover {
+/*.row-list-name:hover {
     background-color: #1abc9c;
-}
+}*/
 
 .row-list-rectangle {
     width: 255px;
-    float: left;  
+    float: left; 
+    cursor: pointer; 
+}
+.row-list-rectangle:.row-list-name:hover {
+    background-color: #1abc9c;
 }
 
 .row-list-rectangle a {
@@ -155,7 +159,7 @@ font-family: "Roboto", "Arial", serif;
 
 .row-list-price {
     float: right;
-    font-family: "Roboto", "Arial", serif;
+    font-family: "Roboto", "Arial", sans-serif;
     font-size: 18px;
     line-height: 32px;
     width: 53px;
@@ -242,4 +246,7 @@ font-family: "Roboto", "Arial", serif;
     font-size: 16px;
     line-height: 26px;
     padding: 15px 25px;   
+}
+.page-footer-link:hover {
+    background-color: #1abc9c;
 }
