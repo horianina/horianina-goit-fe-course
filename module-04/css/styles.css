@@ -1,11 +1,11 @@
 body {
-    
     margin: auto;
 }
-.page-header {
 
+.page-header {
     padding: 20px 0;
 }
+
 .site-navigation {
   float: right;     
  list-style: none;
@@ -13,12 +13,14 @@ body {
  margin: 0;
  
 }
+
 .container {
     width: 1140px;
     padding-left: 15px;
     padding-right: 15px;
     margin: 0 auto;
 }
+
 .logo {
     float: left;
     list-style: none;
@@ -32,19 +34,21 @@ body {
     line-height: 32px;
     
 }
+
 .logo::first-letter {
 color: #1abc9c;
 font-family: "Roboto", "Arial", serif;
 }
+
 .site-navigation li{
     float: left;
     margin-right: 15px;
-    
-    
 }
+
 .site-navigation li:last-child {
     margin-right: 0;
  }
+
 .site-navigation a {
     display: block;
     color: #0f0101;
@@ -74,31 +78,34 @@ font-family: "Roboto", "Arial", serif;
     text-transform: uppercase;
     list-style: none;
     padding: 0;
-    margin: 0;
-    
+    margin: 0;  
 }
-
-
 
 .row-list-price:hover {
     background-color: #1abc9c;
 }
+
 .row-list-name:hover {
     background-color: #1abc9c;
 }
+
 .row-list-rectangle {
     width: 255px;
     float: left;  
 }
+
 .row-list-rectangle a {
     text-decoration: none;
 }
+
 .row-list-rectangle:not(:nth-child(4n)) {
     margin-right: 40px;
 }
+
 .row-list-rectangle:not(:nth-last-child(-n+4)) {
     margin-bottom: 32px;
 }
+
 .page-footer-name::after {
     display: block;
     width: 164px;
@@ -106,30 +113,28 @@ font-family: "Roboto", "Arial", serif;
     background-color: #4ec6ab ;
     content: '';
     margin: 20px auto;
-   
 }
+
 .row-list-heading::after {
     display: block;
     width: 164px;
     height: 7px;
     background-color: #4ec6ab ;
     content: '';
-    margin: 20px auto;
-    
+    margin: 20px auto; 
 }
+
 .clearfix::after {
     display: table;
     content: '';
     clear: both;
 }
+
 .row-list-image {
-    float: right;
-  
+    float: right; 
 }
 .row-list-name {
-
-    background-color: #323232;
-    
+    background-color: #323232;  
 }
 .row-list-names {
     float: left;
@@ -138,15 +143,16 @@ font-family: "Roboto", "Arial", serif;
     line-height: 32px;
     width: 202px;
     height: 40px;
-   
     color: #f5f5f5;
     margin: 0;
     padding: 0;
     text-align: center;
 }
+
 .row-list-names:hover {
     background-color: #1abc9c;
 }
+
 .row-list-price {
     float: right;
     font-family: "Roboto", "Arial", serif;
@@ -160,9 +166,9 @@ font-family: "Roboto", "Arial", serif;
     padding: 0;
     text-align: center;
 }
+
 .page-footer {
     padding: 20px;
-    width: 1140px;
 }
 
 .page-footer-list {
@@ -170,14 +176,17 @@ font-family: "Roboto", "Arial", serif;
     padding: 0;
     margin: 0;
 }
+
 .page-footer-row {
     width: 350px ;
     float: left;
     margin-right: 10px;
 }
+
 .page-footer-row:not(:nth-child(3n)){
     margin-right: 40px;
 }
+
 .page-footer-row::not(:nth-last-child(-n+3)) {
     margin-bottom: 82px;
 }
@@ -201,15 +210,17 @@ font-family: "Roboto", "Arial", serif;
     margin: 0;
     margin-bottom: 20px;
 }
-.page-footer-heading::after {
-    
+
+.page-footer-heading::after { 
     display: block;
     width: 164px;
     height: 3px;
     background-color: #4ec6ab ;
     content: '';
     margin: 20px 0;
+    margin-top: 7px;
 }
+
 .page-footer-post {
     font-family: "OpenSans", "Arial", sans-serif;
     font-size: 18px;
@@ -218,6 +229,7 @@ font-family: "Roboto", "Arial", serif;
     margin: 0;
     margin-bottom: 20px;
 }
+
 .page-footer-link {
     display: block;
     font-family: "OpenSans", "Arial", sans-serif;
