@@ -37,10 +37,10 @@ body {
 
 .logo::first-letter {
 color: #1abc9c;
-font-family: "Roboto", "Arial", serif;
+font-family: "Roboto", "Arial", sans-serif;
 }
 
-.site-navigation li{
+.site-navigation li {
     float: left;
     margin-right: 15px;
 }
@@ -90,20 +90,23 @@ font-family: "Roboto", "Arial", serif;
 }*/
 
 .row-list-rectangle {
+    display: block;
     width: 255px;
     float: left; 
     cursor: pointer; 
+    
 }
-.row-list-rectangle:.row-list-name:hover {
+
+.row-list-rectangle:hover .row-list-name {
     background-color: #1abc9c;
 }
 
-.row-list-rectangle a {
+/*.row-list-rectangle a {
     text-decoration: none;
-}
+}*/
 
 .row-list-rectangle:not(:nth-child(4n)) {
-    margin-right: 40px;
+    margin-right: 0;
 }
 
 .row-list-rectangle:not(:nth-last-child(-n+4)) {
@@ -116,7 +119,7 @@ font-family: "Roboto", "Arial", serif;
     height: 7px;
     background-color: #4ec6ab ;
     content: '';
-    margin: 20px auto;
+    margin-top: 20px;
 }
 
 .row-list-heading::after {
@@ -125,7 +128,8 @@ font-family: "Roboto", "Arial", serif;
     height: 7px;
     background-color: #4ec6ab ;
     content: '';
-    margin: 20px auto; 
+    /*margin-top: 20px auto;*/
+    margin-top: 20px;
 }
 
 .clearfix::after {
@@ -142,7 +146,7 @@ font-family: "Roboto", "Arial", serif;
 }
 .row-list-names {
     float: left;
-    font-family: "Roboto", "Arial", serif;
+    font-family: "Roboto", "Arial", sans-serif;
     font-size: 18px;
     line-height: 32px;
     width: 202px;
@@ -153,19 +157,21 @@ font-family: "Roboto", "Arial", serif;
     text-align: center;
 }
 
-.row-list-names:hover {
+/*.row-list-names:hover {
     background-color: #1abc9c;
-}
+}*/
 
 .row-list-price {
     float: right;
     font-family: "Roboto", "Arial", sans-serif;
     font-size: 18px;
+    font-weight: 400;
     line-height: 32px;
     width: 53px;
     height: 40px;
-    background-color: #ffffff;
-    opacity: 0.7;
+    color:  #ffffff;
+    background-color:#8c8c8c;
+    opacity: 0.9;
     margin: 0;
     padding: 0;
     text-align: center;
@@ -195,7 +201,7 @@ font-family: "Roboto", "Arial", serif;
     margin-bottom: 82px;
 }
 .page-footer-name {
-    font-family: "Roboto", "Arial", serif;
+    font-family: "Roboto", "Arial", sans-serif;
     font-size: 48px;
     font-weight: 900;
     line-height: 32px;
@@ -221,7 +227,6 @@ font-family: "Roboto", "Arial", serif;
     height: 3px;
     background-color: #4ec6ab ;
     content: '';
-    margin: 20px 0;
     margin-top: 7px;
 }
 
