@@ -1,0 +1,276 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+body {
+    font-family: "Roboto", "Arial", sans-serif;
+}
+
+.container {
+    width: 1140px;
+    margin: 0 auto;
+  }
+
+  .clearfix::after {
+    display: table;
+    content: "";
+    clear: both;
+  }
+  .header {
+      padding-top: 32px;
+
+  }
+  
+
+  .logotype {
+    font-family: "Open-sans", "Arial", sans-serif; 
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 36px;
+    color: #555252;
+    float: left;
+  }
+  
+ .navigation_list {
+     float: right;
+     margin-top: 7px;
+ }
+ .navigation_list_item {
+    float: left;
+    margin-right: 15px;
+ } 
+
+ .navigation_list_item:last-child {
+  margin-right: 0;
+}
+
+ .navigation_list_link {
+  display: block;
+  color: #0f0101;
+  text-transform: uppercase;
+  text-decoration: none;
+  line-height: 11px;
+  font-family: "Roboto", "Arial", sans-serif;
+
+ }
+ .navigation a:hover {
+  color: #1abc9c; 
+
+ }
+ .navigation_list_item {
+     float: left;
+ }
+ .navigation_list_item:not(:last-child) {
+     margin-right: 30px;
+
+ }
+  .navigation_list_link {
+    font-family: "Roboto", "Arial", sans-serif; 
+    font-size: 10px;
+    font-weight: 700;
+    line-height: 11px;
+    color: #0f0101;
+  }
+
+ .slider {
+  position: relative;
+  height: auto;
+  padding-top: 32px;
+  
+ }
+ 
+ .slider::before {
+   position: absolute;
+   display: block;
+   width: 100%;
+   height: 100%;
+   content: '';
+   margin: 0 auto;
+   background-color: rgba(0, 0, 2, 0.52);
+ }
+
+ .slider-bt {
+    position: absolute;
+    width: 1140px;
+    left: 50%;
+    right: 50%;
+    top: 227px;
+    transform: translateX(-50%);
+ }
+
+ .slider-ctrl {
+  border: none;
+  width: 104px;
+  height: 104px;
+  background-color: #1abc9c;
+ 
+}
+
+.slider-ctrl-prev {
+  float: left;
+}
+
+.slider-ctrl-next {
+  float: right;
+}  
+
+.slides {
+  position: absolute;
+  width: 800px ;
+  left: 50%;
+  top: 50%;
+  
+  color: #ffffff;
+  transform: translate(-50%, -50%);
+      
+}
+.slides-image {
+  width: 100%;
+}
+
+.slides-img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  
+}
+    
+.slides-descr-up {    
+  font-size: 60px; 
+  color: #ffffff;
+  text-align: left;    
+}
+
+.slides-descr-down {
+      
+  font-size: 24px;
+     /* bottom: 0;
+      right: 0;
+      width: 730px;*/
+  color: #ffffff;
+     /* transform: translateY(-50%);*/
+}
+
+.row-list {
+  text-decoration: none;
+  text-transform: uppercase;
+  list-style: none;
+  padding: 0;
+  margin: 0;  
+}
+.row-list-collection {
+  display: block;
+  width: 255px;
+  float: left; 
+  cursor: pointer; 
+  padding-right: 30px;
+  padding-bottom: 28px;
+    
+}
+.row-list-collection:not(:nth-last-child(-n+4)) {
+  margin-bottom: 32px;
+
+}
+.row-list-collection:not(:nth-child(4n)) {
+  margin-right: 0;
+}
+.row-list-c.row-list-collection .row-list-block {
+  background-color: #1abc9c;
+}
+  .row-name {
+    
+      font-family: "Roboto", "Arial", sans-serif;
+      font-size: 48px;
+      font-weight: 900;
+      line-height: 32px;
+      color: #515151;
+      text-transform: uppercase;
+      text-align: center;
+      margin: 0;
+      margin-bottom: 30px;
+      padding-top: 102px;
+  }
+  .row-name::after {
+    display: block;
+    width: 164px;
+    height: 7px;
+    background-color: #4ec6ab ;
+    content: '';
+    margin: 0 auto;
+    margin-top: 20px;
+}
+.row-list-image {
+  float: right; 
+}
+.row-list-block {
+  background-color: #323232;  
+}
+.row-list-name {
+  float: left;
+  font-family: "Roboto", "Arial", sans-serif;
+  font-size: 18px;
+  line-height: 32px;
+  width: 202px;
+  height: 40px;
+  color: #f5f5f5;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+.row-list-price {
+  float: right;
+  font-family: "Roboto", "Arial", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 32px;
+  width: 53px;
+  height: 40px;
+  color:  #ffffff;
+  background-color:#8c8c8c;
+  opacity: 0.9;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
