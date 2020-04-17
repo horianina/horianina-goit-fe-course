@@ -201,7 +201,7 @@ body {
   padding-top: 82px; 
 }
 .row-list-collection {
-  display: block;
+  /*display: block;*/
   width: 255px;
   float: left; 
   cursor: pointer; 
@@ -224,6 +224,9 @@ body {
 }
 .row-list-collection .row-list-block {
   background-color: #323232;
+}
+.row-list-collection a {
+  color: #ffffff;
 }
 .row-name {
     
@@ -255,42 +258,42 @@ body {
   /*height: auto;*/
 }
 .row-list-block {
+  float: left;
+  width: 100%;
   background-color: #323232;  
 }
 .row-list-name {
   float: left;
   font-family: "Roboto", "Arial", sans-serif;
   font-size: 18px;
-  line-height: 32px;
-  width: 204px;
-  height: 40px;
+  line-height: 40px;
+  /*width: 204px;*/
+  /*height: 40px;*/
   color: #f5f5f5;
   margin: 0;
-  padding: 0;
+  padding-left: 13px;
   text-align: center;
 }
-.row-list-name:hover{
+.row-list-collection:hover .row-list-block{
   background-color: #1abc9c;
 }
-.row-list-price:hover{
-  background-color: #1abc9c;
-  
+.row-list-collection a {
+  color: #FFFFFF;
 }
 .row-list-price {
   float: right;
   font-family: "Roboto", "Arial", sans-serif;
   font-size: 18px;
   font-weight: 400;
-  line-height: 32px;
-  width: 51px;
+  line-height: 40px;
+  width: 40px;
   height: 40px;
   color:  #ffffff;
-  background-color:#8c8c8c;
-  opacity: 0.9;
-  margin: 0;
-  padding: 0;
+  background-color: rgba(255, 255, 255, 0.5);
+  cursor: pointer;
   text-align: center;
 }
+
 .overlay {  
   position: absolute;                                                                  
   width: 255px;
@@ -323,12 +326,12 @@ body {
 .overlay_list_item:not(:nth-last-child(-n+1)) {
   margin-bottom: 8px;
 }
-.overlay_list-clik {
-  display: inline-block;
- 
-}
+
+
 .overlay_list-clik_basket {
-  width: 164px;
+  background-image: url("../img/basket.png");
+  background-color: transparent;
+  /*width: 164px;
   height: 50px;
   padding-top: 1px;
   background-color: #323232;
@@ -338,14 +341,16 @@ body {
   line-height: 32px;
   letter-spacing: -0.28px;
   text-transform: uppercase;
-  float: left;
-
+  background-position: left;
+  float: left;*/
+  
 }
 
 .overlay_list-clik_basket span {
   vertical-align: middle;
   padding-right: 15px;
-  float: right;
+ 
+  
 }
 
 .overlay_list-clik {
@@ -356,12 +361,7 @@ body {
   background-color: transparent;
   border: 1px solid #ffffff;
   cursor: pointer;
-  /*display: block;
-  float: left;
-  border: none;
-  width: 50px;
-  height: 50px;
-  */background-repeat: no-repeat;
+  background-repeat: no-repeat;
   background-position: center;
 }
 
@@ -390,9 +390,14 @@ body {
   line-height: 32px;
   letter-spacing: -0.28px;
   text-transform: uppercase;
-  background-image: url("../img/basket.png");
-  background-color: transparent;
+  /*background-image: url("../img/basket.png");
+  background-color: transparent;*/
   width: 165px;
+  background-position: left;
+  
+}
+.cart {
+  line-height: 50px;
   
 }
 .works {
