@@ -246,11 +246,7 @@ body {
     margin: 36px auto 0;
 }
 
-.new_collection-list-image {
-  float: right; 
-  width: 255px;
-  /*height: auto;*/
-}
+
 
 .new_collection-list-block {
   display: block;
@@ -267,7 +263,9 @@ body {
   padding-left: 13px;
   text-align: center;
 }
-
+.new_collection-list-image-wrapper {
+  position: relative;
+}
 .new_collection-list-card:hover .new_collection-list-block{
   background-color: #1abc9c;
 }
@@ -292,8 +290,8 @@ body {
 
 .overlay {  
   position: absolute;                                                                  
-  width: 255px;
-  height: 284px;
+  width: 100%;
+  height: 100%;
   background-color: rgba(0, 0, 0, 0.549);
   top: 0;
   left: 0;
