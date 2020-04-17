@@ -323,18 +323,6 @@ body {
   margin-bottom: 8px;
 }
 
-.overlay_list-clik_basket {
-  background-image: url("../img/basket.png");
-  background-color: transparent;
-  font-family: "Open sans", sans-serif ;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 32px;
-  letter-spacing: -0.28px;
-  text-transform: uppercase;
-  width: 165px;
-  background-position: 10px center;
-}
 
 .overlay_list-clik_basket span {
   vertical-align: middle;
@@ -352,7 +340,18 @@ body {
   background-repeat: no-repeat;
   background-position: center;
 }
-
+.overlay_list-clik_basket {
+  background-image: url("../img/basket.png");
+  background-color: transparent;
+  font-family: "Open sans", sans-serif ;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: -0.28px;
+  text-transform: uppercase;
+  width: 165px;
+  background-position: 10px center;
+}
 .overlay_list-clik:hover {
   background-color: #1abc9c;
 }
@@ -380,8 +379,19 @@ body {
   padding: 42px 0;
   background-color: #323232;
 }
-
-.tabs-list {
+.works_list {
+  font-family: "Roboto", "Arial", sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 28px;
+  color: #ffffff;
+  text-align: center;
+}
+.works_list-link {
+ color: #46bfa9;
+cursor: pointer;
+}
+/*.tabs-list {
   width: max-content;
   margin: 0 auto;
 }
@@ -407,7 +417,7 @@ body {
 
 .tabs-list_item:not(:last-child) {
   margin-right: 6px;
-}
+}*/
   
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
