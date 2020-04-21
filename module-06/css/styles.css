@@ -123,8 +123,7 @@ body {
   padding-bottom: 105px;
   padding-left: 82px;
   background-repeat: no-repeat;
-  background-position: 0 left;
-  
+   
 }
 .services-list_item:nth-child(n+4){
     padding-bottom: 0;
@@ -247,7 +246,7 @@ body {
         90deg,
         rgba(252, 227, 138, 0.8) 0%,
         rgba(243, 129, 129, 0.8) 100%
-    )
+    );
     
 }
 
@@ -345,6 +344,7 @@ body {
     font-size: 15px;
     color: #999999;
     line-height: 24px;
+    padding-left: 10px;
   }
 .subscribe-form__btn {
     font-family: "Monserrat", sans-serif;
