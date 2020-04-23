@@ -114,9 +114,6 @@ img {
   border-radius: 20px;
 }
 
-
-
-
 .dreams_logo-link {
   
     font-size: 20px;
@@ -125,7 +122,7 @@ img {
     font-weight: bold;
     text-transform: uppercase;
     line-height: 1.2;
-    padding-bottom: 18px;
+    
     letter-spacing: 1px;
     
 }
@@ -175,7 +172,7 @@ img {
     border-radius: 20px;
     text-align: center;
     margin: 0 auto;
-    padding: 15px 0;
+    padding: 11px 0;
     font-size: 14px;
     font-family: "Montserrat";
     font-weight: bold;
@@ -237,19 +234,36 @@ img {
   position: absolute;
   bottom: 0;
   right: 0;
+  background-repeat: no-repeat;
+  
+  border-style: solid;
+  border-width: 4px;
+  border-color: rgb(255, 255, 255);
+  border-radius: 50%;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 .image-icon_first::after {
   background-image: url(../img/icon1.png);
+  background-color: rgb(255, 78, 80);
+  
 }
+
 .image-icon_second::after {
   background-image: url(../img/icon2.png);
+  background-color: rgb(255, 165, 7);
 }
 .image-icon_third::after {
   background-image: url(../img/icon3.png);
+  background-color: rgb(28, 215, 173);
 }
+
 .image-icon_fourth::after {
   background-image: url(../img/icon4.png);
+  background-color: rgb(78, 115, 219);
 }
+
+
 .partners_list-item_image-img {
   
   border-radius: 50%;
@@ -336,7 +350,7 @@ img {
   width: 500px;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  
   flex-wrap: wrap;
   margin: 0 auto;
 }
@@ -367,7 +381,7 @@ img {
   width: 940px;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  
   margin: 0 auto;
   margin-bottom: 40px;
 }
