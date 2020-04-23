@@ -1,0 +1,320 @@
+
+
+
+/* roboto-300 - latin */
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    src: local('Roboto Light'), local('Roboto-Light'),
+         url('../fonts/roboto-v20-latin-300.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/roboto-v20-latin-300.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  /* roboto-regular - latin */
+  @font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Roboto'), local('Roboto-Regular'),
+         url('../fonts/roboto-v20-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/roboto-v20-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+/* montserrat-regular - latin */
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Montserrat Regular'), local('Montserrat-Regular'),
+         url('../fonts/montserrat-v14-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/montserrat-v14-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  /* montserrat-700 - latin */
+  @font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    src: local('Montserrat Bold'), local('Montserrat-Bold'),
+         url('../fonts/montserrat-v14-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/montserrat-v14-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.clearfix::after {
+  display: table;
+  content: "";
+  clear: both;  
+}
+.container {
+    width: 280px;
+    margin: 0 auto;
+}
+.header {
+  margin-bottom: 118px;
+}
+.dreams_wrapper {
+    background-image: url(../img/bg_image.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 183px;
+}
+.dreams_logo-link-tablet {
+  display: none;
+}
+.form {
+    text-align: center;
+    margin-bottom: 164px;
+}
+.form_btn {
+    
+    font-family: "Montserrat";
+    font-size: 14px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    line-height: 1.2;
+    background-color: transparent;
+    width: 88px;
+    height: 35px;
+    border: none;
+    cursor: pointer;
+    
+    
+    
+}
+
+
+.dreams_logo-link {
+  
+    font-size: 20px;
+    font-family: "Montserrat";
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.2;
+    padding-bottom: 18px;
+    letter-spacing: 1px;
+    
+}
+.dreams_logo-link-tablet {
+  display: none;
+}
+.dreams_logo {
+    
+    text-align: center;
+  
+}
+.dreams_heading {
+    font-size: 30px;
+  font-family: "Montserrat";
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.2; 
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.dreams_heading_first {
+  margin-top: 18px;
+
+}
+
+.dreams_post {
+    display: block;
+    font-size: 18px;
+    font-family: "Roboto";
+    color: rgb(255, 255, 255);
+    font-weight: 300;
+    line-height: 1.2;
+    text-align: center; 
+    width: 220px;
+    
+    margin: 0 auto;
+    margin-bottom: 11px;
+}
+.dreams_link-find_your {
+  display: flex;
+  justify-content: center;
+    width: 280px;
+    min-height: 40px;
+    align-items: center;
+    border-radius: 20px;
+    background-color: rgb(255, 78, 80);
+    text-align: center;
+    margin: 0 auto;
+    padding: 15px 0;
+   
+}
+.dreams_link-find_your {
+    font-size: 14px;
+    font-family: "Montserrat";
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    line-height: 1.2;
+}
+.partners {
+    padding-top: 72px;
+}  
+.partners_heading {
+  font-size: 22px;
+  font-family: "Montserrat";
+  color: rgb(51, 51, 51);
+  font-weight: bold;
+  line-height: 1.2;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.partners_list-item_image {
+  width: 122px;
+  height: 122px;
+  margin: 0 auto;
+  position: relative;
+} 
+.partners_list-item_image::after {
+  width: 41px;
+  height: 41px;
+  border: 2px;
+  content: "";
+ 
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+.image-icon_first::after {
+  background-image: url(../img/icon1.png);
+}
+.image-icon_second::after {
+  background-image: url(../img/icon2.png);
+}
+.image-icon_third::after {
+  background-image: url(../img/icon3.png);
+}
+.image-icon_fourth::after {
+  background-image: url(../img/icon4.png);
+}
+.partners_list-item_image-img {
+  
+  border-radius: 50%;
+  background-color: rgb(251, 251, 251);
+  
+}
+.partners_list-item_name {
+  font-size: 14px;
+  font-family: "Montserrat";
+  color: rgb(51, 51, 51);
+  font-weight: bold;
+  line-height: 1.2;
+  text-align: center;
+  margin: 22px 0;
+}
+.partners_list-item_post {
+
+  font-size: 14px;
+  font-family: "Roboto";
+  color: rgb(102, 102, 102);
+  line-height: 1.2;
+  text-align: center;
+  
+  width: 220px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+
+/*версия tablet*/
+@media (min-width: 768px) {
+ .container {
+   width: 660px;
+   margin: 0 auto;
+ }
+ .dreams_wrapper {
+  
+   padding-bottom: 234px;
+   background-image: url(../img/bg_image_tablet.jpg);
+   width: 100%;
+   background-position: center;
+   margin: auto; 
+   padding-top: 50px;
+   
+
+ }
+ .header {
+   display: flex;
+   flex-direction: row-reverse;
+   justify-content: space-between;
+ }
+ .dreams_logo-link-mobile {
+  display: none;
+}
+.dreams_logo-link-tablet {
+  display: block;
+}
+.form {
+  
+  margin-bottom: 0;
+}
+.form_btn {
+  
+}
+.dreams_heading {
+   display: block;
+  font-size: 52px;
+  margin-bottom: 44px;
+  /*width: 480px;
+  text-align: center;
+  margin: 0 auto;*/
+ }
+.dreams_heading_first {
+  margin-top: 156px;
+
+}
+.dreams_post {
+  font-size: 24px;
+  width: 404px ;
+  margin-bottom: 40px;
+}
+
+}
+/*версия desktop*/
+@media (min-width: 980px) {
+.container {
+    width: 940px;
+   
+}
+.dreams_wrapper {
+  
+    padding-bottom: 234px;
+    background-image: url(../img/bg_image_desktop.jpg);
+    width: 100%;
+    background-position: center;
+    margin: auto; 
+    padding-top: 50px;
+    
+ 
+}  
+}
