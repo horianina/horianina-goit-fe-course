@@ -157,17 +157,17 @@ img {
     padding-bottom: 125px;
 }
 .services-list_item {
-    position: relative;
+    
     max-width: 290px;
     /*padding-bottom: 124px;*/
     /*padding-left: 40px;*/
     background-repeat: no-repeat;
-     padding-top: 92px;
+    
 }
 
 
 .services-list_item::before {
-   position: absolute;
+   display: block;
    top: 0;
    left: 50%;
    transform: translateX(-50%);
@@ -232,11 +232,12 @@ img {
 }
 .contact {
     background-color: rgb(34, 34, 34);
-    max-width: 1402px;
+   
     height: 677px;
     background-image: url(../img/Map.png);
     background-position: right;
     background-repeat: no-repeat;
+    padding-bottom: 80px;
      
       /*  background-color: rgb(34, 34, 34);
         background-image: url(../img/Map.png);
@@ -249,11 +250,8 @@ img {
 }
 
 .contact-form_list {
-    display: flex;
-    align-content: space-between;
-    flex-wrap: wrap;
-    height: 211px;
-    width: 455px;
+
+    width: 100%;
 }
 .contact-form_block {
     display: flex ;
@@ -263,15 +261,17 @@ img {
 }
 
 .contact-form_input {
-    width: 455px;
-    height: 53px;
+    width: calc(50%-15px);
+}
+.contact-form_input:not(:last-child) {
+    margin-right: 20px;
 }
 .contact-form_message {
-   width: 455px;
-    height: 211px;
-    resize: none;
-    padding-top: 20px;
   
+    padding: 0 30px;
+   /*resize: none;
+    padding-top: 20px;*/
+    width: calc(50%-15px);
 }
 .contact-form_input,
 .contact-form_message {
