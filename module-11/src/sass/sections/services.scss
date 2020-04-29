@@ -1,0 +1,62 @@
+.services {
+    padding-bottom: 106px;
+}
+.services__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.services__list_item {
+  width: 381px;
+  padding-bottom: 105px;
+  padding-left: 82px;
+  background-repeat: no-repeat;
+   
+}
+.services__list_item:nth-child(n+4){
+    padding-bottom: 0;
+}
+.services__list-item_photo {
+    background-image: url("../images/servises/alarm.svg");
+}
+
+.services__list-item_web {
+    background-image: url("../images/servises/line_graf.svg");   
+}
+
+.services__list-item_creat {
+    background-image: url("../images/servises/computer.svg");   
+}
+
+.services__list-item_seo {
+    background-image: url("../images/servises/book.svg");  
+}
+
+.services__list-item_css {
+    background-image: url("../images/servises/home.svg");   
+}
+
+.services__list-item_digital {
+    background-image: url("../images/servises/image.svg");  
+}
+
+.services__list_name {
+    @include font($main-font, 14px, 400, 1.2);
+    text-transform: uppercase;
+    color: $secondary-text-color;
+    margin: 0 auto 10px;
+    
+}
+
+.services__list_post {
+    font-family: $secondary-font;
+    font-weight: 400; 
+    font-size: 15px;
+    color: #999999;
+    line-height: 24px;
+    margin: 20px auto 0;
+    
+} 

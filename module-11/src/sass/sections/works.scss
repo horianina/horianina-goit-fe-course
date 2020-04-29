@@ -1,0 +1,67 @@
+.works__list {
+    font-family: $main-font, sans-serif;
+    font-weight: 400; 
+    font-size: 14px;
+    line-height: 16px;
+    color: $secondary-text-color;
+    display: block;
+    
+}
+  .works__list-link {
+   color: #ef8c8a;
+  cursor: pointer;
+}
+
+.list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    
+    padding-bottom: 13px;
+}
+.subscribe-form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    
+    
+}
+.subscribe-form__input {
+    border: 1px solid #cccccc;
+    width: 230px;
+    height: 40px;
+    font-family: $secondary-font, "Arial", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+    font-size: 15px;
+    color: #999999;
+    line-height: 24px;
+    padding-left: 10px;
+  }
+.subscribe-form__btn {
+    font-family: $main-font, sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    color: $main-text-color;
+    background-color: #95e1d3;
+    width: 150px ;
+    height: 40px;
+    border: none;
+    text-transform: uppercase;
+}
+
+.works::before {
+    content: "";
+    display: block;
+    width: 1200px;
+    height: 1px;
+    background-color: rgb(229, 229, 229);
+    margin: 0px auto 10px auto;
+    
+  }
